@@ -1,0 +1,49 @@
+/** Formatting **/
+html {
+	overflow: auto;
+	overflow-x: hidden;
+}
+@font-face {
+	font-family: Roboto;
+	src: url(../font/RobotoMono.ttf);
+	font-display: swap;
+}
+body {
+	font-family: Roboto;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+a {
+	font-family: Roboto;
+    margin-bottom: 0;
+}
+
+section {
+	display: ;
+}
+
+p {
+	/*padding-left: 5px;
+	padding-right: 5px;*/
+	font-size: 15px;
+}
+.button {
+	font-family: Roboto;
+	border-radius: 5px;
+}
+.Mention {
+    color: lightskyblue;
+    text-decoration: none;
+}
+.contactus:hover {
+	background: #383838;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

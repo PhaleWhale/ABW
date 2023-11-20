@@ -1,0 +1,234 @@
+/** Header **/
+	/* Fixes Header Padding */
+	header {
+		position: fixed;
+		width: 100%;
+		box-shadow: 0 5px 5px 0 black;
+		z-index: 100;
+		left: 0;
+	}
+	
+	/* Add a black background color to the top navigation */
+	.Nav {
+	  background-color: #333;
+	  overflow: hidden;
+	}
+	
+	#settings {
+		float: right;
+	}
+
+	/* Style the links inside the navigation bar */
+	.Nav a {
+	  float: left;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+
+	#my-search-91807751 {
+		margin-top: 10px;
+	}	
+
+	/* Change the color of links on hover */
+	.Nav a:hover {
+	  background-color: #2e2e2e;
+	  color: white;
+	}
+
+	/* Add a color to the active/current link */
+	.Nav a.active {
+	  background-color: #252525;
+	  color: white;
+	}
+
+	/* Mobile Header */
+	@media screen and (max-width:900px) {
+		.topnav {
+		  overflow: hidden;
+		  background-color: #333;
+		  position: relative;
+		  display: block;
+		}
+
+		.topnav #myLinks {
+		  display: none;
+		}
+
+		.topnav a {
+		  color: white;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  display: block;
+		}
+
+		.topnav a.icon {
+		  background: black;
+		  display: block;
+		  position: absolute;
+		  right: 0;
+		  top: 0;
+		}
+
+		.topnav a:hover {
+		  background-color: #2e2e2e;
+		  color: white;
+		}
+
+		.active {
+		  background-color: #252525;
+		  color: white;
+		}
+		
+		.hide {
+			display: none;
+		}
+	}
+	
+	@media screen and (min-width: 901px) {
+		.topnav {
+			display: none;
+		}
+	}
+
+
+/** Scrollbar **/
+	::-webkit-scrollbar {
+		display: none;
+	}
+
+/* Dropdown */
+	.dropbtn {
+		background-color: inherit;
+		color: white;
+		font-size: 17px;
+		border: none;=
+	}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: fixed;
+		margin-top: 48px;
+		background-color: #2e2e2e;
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		color: white;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+	.dropdown-content a:hover {background-color: inherit;}
+
+	.dropdown:hover .dropdown-content {display: block;}
+
+	.dropdown:hover .dropbtn {background-color: #2e2e2e;}
+
+
+/** Footer **/
+
+	.col {
+		float: right;
+		margin: 32px;
+		display: ;
+	}
+	
+	.links {
+		display: table-column;
+		text-decoration: none;
+	}
+	
+	.linkContainer {
+		display: grid;
+	}
+	
+	.footerCols {
+		display: ;
+	}
+	
+	.copyright {
+		display: inline-flex;
+		align-items: center;
+	}
+	
+	.newsletter {
+		float: left;
+		border: none;
+		border-radius: 4px;
+		padding: 8px;
+	}
+	
+	.newsFields {
+		
+	}
+
+
+
+/** Slider **/
+	.switch {
+		position: relative;
+		display: inline-block;
+		width: 60px;
+		height: 34px;
+	}
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+	.slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #ccc;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+	input:checked + .slider {
+		background-color: #2196F3;
+	}
+
+	input:focus + .slider {
+		box-shadow: 0 0 1px #2196F3;
+	}
+
+	input:checked + .slider:before {
+		-webkit-transform: translateX(26px);
+		-ms-transform: translateX(26px);
+		transform: translateX(26px);
+	}
+
+	.slider.round {
+		border-radius: 34px;
+	}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }

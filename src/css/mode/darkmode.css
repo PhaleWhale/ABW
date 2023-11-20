@@ -1,0 +1,66 @@
+article.games {
+	background-color: #252525;
+}
+article {
+	background-color: #252525;
+}
+aside {
+	background-color: #2e2e2e;
+}
+aside.social {
+	background-color: #383838;
+}
+div.contactinfo {
+	background-color: #2e2e2e;
+}
+input[type=submit] {
+  background-color: #5DADE2;
+}
+input[type=email] {
+	color: white;
+}
+.sectionA {
+	background-color: #2e2e2e;
+}
+body {
+	color: white;
+	background-color: #121212;
+}
+a {
+	color: darkgray;
+}
+button a {
+	color: ;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.contactus {
+	background: #4f4f4f;
+}
+.game {
+	text-decoration: none;
+	color: white;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #2e2e2e;
+}
+
+aside.blogContainer {
+	background-color: #252525;
+}
+
+article.blogContainer {
+	border-color: #2e2e2e;
+}
+
+.blogCard {
+	background-color: #2e2e2e;
+}
+
+.fcf-form-control {
+	background-color: #2e2e2e;
+	color: white
+}
