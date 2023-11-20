@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html style="overflow-y: scroll;">
+	<head>
+		<title>Gallery</title>
+		<meta name="google-site-verification" content="XVVD973Y6eWQiNaevYkHy5DzgIyr75Pe0EzIJKbOVUg" />
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ6P5N4C6T"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-DJ6P5N4C6T');
+		</script>
+		<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" type="image/png" href="./src/Logo.png" />
+		<link rel="stylesheet" href="./src/css/Marginals.css" />
+		<link rel="stylesheet" href="./src/css/formatting.css" />
+		<link rel="stylesheet" href="./src/css/layout.css" />
+		<link rel="stylesheet" href="./src/css/gallery.css" />
+		<link rel="stylesheet" href="./src/css/hoverbutton.css" />
+		<link rel="stylesheet" href="./src/css/mode/lightmode.css" id="cookieMode" />
+		<link rel="stylesheet" href="./src/css/mobile/mobile-gallery.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+		<!-- Header -->
+		<header>
+			<!-- Desktop -->
+			<div class="Nav hide">
+				<a href="./index.html" class="active">Home</a>
+				<a href="./contact.html" class="">Contact</a>
+				<a href="./products.html" class="">Products</a>
+				<a href="./origins.html" class="">History</a>
+				<a href="./gaming.html" class="">Gaming</a>
+				<div class="dropdown">
+					<a class="dropbtn">Settings</a>
+					<div class="dropdown-content">
+						<center style="display: grid;">
+						<div>
+							<p style="display: inline-block;">light/dark</p>
+							<label class="switch" style="display: inline-block;">
+								<input aria-label="switch" type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+								<span class="slider round" />
+							</label>
+						</div>
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="./settings.html">All Settings</a>
+						</center>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Mobile -->
+			<div class="topnav">
+			  <a href="./mobile-gallery.html" class="active">Gallery</a>
+			  <div id="myLinks">
+				<a href="./index.html">Home</a>
+				<a href="./contact.html">Contact</a>
+				<a href="./products.html">Products</a>
+			  </div>
+			  <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+				<i class="fa fa-bars"></i>
+			  </a>
+			</div>
+		</header>
+		
+		<!-- Gallery -->
+		<section>
+			<article class="mobile-gallery">
+					<center>
+					<h2>My Photography</h2>
+					</center>
+					<div class="overflow">
+						<div class="bubbles">
+							<div class="gallery">
+								<img src="./src/images/lowRes/Bubble1.JPG" alt="bubble 1" width="600" height="400" onclick="openModal();currentSlide(1)" class="hover-shadow">
+								<div class="desc">Bubbles 1</div>
+							</div>
+							<div class="gallery">
+								<img src="./src/images/lowRes/Bubble2.JPG" alt="bubble 2" width="600" height="400" onclick="openModal();currentSlide(2)" class="hover-shadow">
+								<div class="desc">Bubbles 2</div>
+							</div>
+							<div class="gallery">
+								<img src="./src/images/lowRes/Bubble3.JPG" alt="bubble 3" width="600" height="400" onclick="openModal();currentSlide(3)" class="hover-shadow">
+								<div class="desc">Bubbles 3</div>
+							</div>
+							<div class="gallery">
+								<img src="./src/images/lowRes/Bubble4.JPG" alt="bubble 4" width="600" height="400" onclick="openModal();currentSlide(4)" class="hover-shadow">
+								<div class="desc">Bubbles 4</div>
+							</div>
+							<div class="gallery">
+								<img src="./src/images/lowRes/Bubble5.JPG" alt="bubble 5" width="600" height="400" onclick="openModal();currentSlide(5)" class="hover-shadow">
+								<div class="desc">Bubbles 5</div>
+							</div>
+						</div>
+						<div id="myModal" class="modal">
+						  <span class="close cursor" onclick="closeModal()">&times;</span>
+						  <div class="modal-content">
+							<center>
+							<div class="mySlides">
+							  <img src="./src/images/highRes/Bubble1.JPG" style="width:100%">
+							</div>
+		
+							<div class="mySlides">
+								<img src="./src/images/highRes/Bubble2.JPG" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<img src="./src/images/highRes/Bubble3.JPG" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<img src="./src/images/highRes/Bubble4.JPG" style="width:100%">
+							</div>
+							<div class="mySlides">
+								<img src="./src/images/highRes/Bubble5.JPG" style="width:100%">
+							</div>
+							</center>
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							<div class="caption-container">
+							  <p id="caption"></p>
+							</div>
+							<div class="columz">
+								<center>
+								<div class="columnz">
+								  <img class="demo" src="./src/images/highRes/Bubble1.JPG" onclick="currentSlide(1)" alt="bubble 1" width="95%">
+								</div>
+
+								<div class="columnz">
+								  <img class="demo" src="./src/images/highRes/Bubble2.JPG" onclick="currentSlide(2)" alt="bubble 2" width="95%">
+								</div>
+
+								<div class="columnz">
+								  <img class="demo" src="./src/images/highRes/Bubble3.JPG" onclick="currentSlide(3)" alt="bubble 3" width="95%">
+								</div>
+
+								<div class="columnz">
+								  <img class="demo" src="./src/images/highRes/Bubble4.JPG" onclick="currentSlide(4)" alt="bubble 4" width="95%">
+								</div>
+								
+								<div class="columnz">
+								  <img class="demo" src="./src/images/highRes/Bubble5.JPG" onclick="currentSlide(5)" alt="bubble 5" width="95%">
+								</div>
+								</center>
+							</div>
+						</div>
+						</div>
+						</div>
+						<div class="overflow">
+						<div class="other">
+							<div class="gallery">
+								<img src="./src/images/lowRes/g1.JPG" alt="Sunset" width="600" height="400" onclick="openModal2();currentSlide2(1)" class="hover-shadow">
+								<div class="desc">Sunset</div>
+							</div>
+							<div class="gallery">
+								<img src="./src/images/lowRes/g2.JPG" alt="Campfire" width="600" height="400" onclick="openModal2();currentSlide2(2)" class="hover-shadow">
+								<div class="desc">Campfire</div>
+							</div>
+							<div class="gallery">
+								<img src="./src/images/lowRes/g3.JPG" alt="Little Bluejay" width="600" height="400" onclick="openModal2();currentSlide2(3)" class="hover-shadow">
+								<div class="desc">Little Bluejay</div>
+							</div>
+							<div class="gallery">
+								<img src="./src/images/lowRes/g4.JPG" alt="Glaciers" width="600" height="400" onclick="openModal2();currentSlide2(4)" class="hover-shadow">
+								<div class="desc">Glaciers</div>
+							</div>
+							<div class="gallery">
+								<img src="./src/images/lowRes/g5.JPG" alt="Glass Sphere" width="600" height="400" onclick="openModal2();currentSlide2(5)" class="hover-shadow">
+								<div class="desc">Glass Sphere</div>
+							</div>
+						</div>
+						<div id="myModal2" class="modal2">
+						  <span class="close cursor" onclick="closeModal2()">&times;</span>
+						  <div class="modal-content2">
+							<center>
+							<div class="mySlides2">
+								<img src="./src/images/highRes/g1.JPG" style="width:100%">
+							</div>
+		
+							<div class="mySlides2">
+								<img src="./src/images/highRes/g2.JPG" style="width:100%">
+							</div>
+
+							<div class="mySlides2">
+								<img src="./src/images/highRes/g3.JPG" style="width:100%">
+							</div>
+
+							<div class="mySlides2">
+								<img src="./src/images/highRes/g4.JPG" style="width:100%">
+							</div>
+							<div class="mySlides2">
+								<img src="./src/images/highRes/g5.JPG" style="width:100%">
+							</div>
+							</center>
+							<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+							<div class="caption-container">
+							  <p id="caption2"></p>
+							</div>
+							<div class="columz">
+								<center>
+								<div class="columnz">
+								  <img class="demo2" src="./src/images/lowRes/g1.JPG" onclick="currentSlide2(1)" alt="Sunset" width="95%">
+								</div>
+
+								<div class="columnz">
+								  <img class="demo2" src="./src/images/lowRes/g2.JPG" onclick="currentSlide2(2)" alt="Campfire" width="95%">
+								</div>
+
+								<div class="columnz">
+								  <img class="demo2" src="./src/images/lowRes/g3.JPG" onclick="currentSlide2(3)" alt="Little Bluejay" width="95%">
+								</div>
+
+								<div class="columnz">
+								  <img class="demo2" src="./src/images/lowRes/g4.JPG" onclick="currentSlide2(4)" alt="Glaciers" width="95%">
+								</div>
+								
+								<div class="columnz">
+								  <img class="demo2" src="./src/images/lowRes/g5.JPG" onclick="currentSlide2(5)" alt="Glass Sphere" width="95%">
+								</div>
+								</center>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<!-- Footer -->
+		<footer>
+			<section>
+				<div class="footerCols">
+					<div class="col">
+						<p><b>Get In Touch</b></p>
+						<div class="linkContainer">
+							<a href="./contact.html" class="links">Contact Us</a>
+							<a href="https://github.com/JSOProductions/JSOProductions.github.io/issues/new/choose" class="links">Found an issue?</a>
+						</div>
+					</div>
+					<div class="col">
+						<p><b>Socials</b></p>
+						<div class="linkContainer">
+							<a href="https://github.com/JSOProductions/JSOProductions.github.io" class="links">Github</a>
+							<a href="https://www.youtube.com/@JSOProductions" class="links">Youtube</a>
+							<a href="https://itch.io" class="links">Itch.io</a>
+						</div>
+					</div>
+					<div class="col">
+						<div class="linkContainer">
+							<p><b>Site Links</b></p>
+							<a href="./index.html" class="links">Home</a>
+							<a href="./contact.html" class="links">Contact</a>
+							<a href="./products.html" class="links">Products</a>
+							<a href="./origins.html" class="links">History</a>
+							<a href="./gaming.html" class="links">Gaming</a>
+						</div>
+					</div>
+				</div>
+				
+				<div>
+					
+				</div>
+			</section>
+			<section class="">
+				<center class="copyright">
+					<p><i>Copyright <a href="./src/html/Hidden.html" style="text-decoration: none; color: white; font-size: 20px;">&#169</a> 2023 JSOProductions</i></p>
+					<a href="//www.dmca.com/Protection/Status.aspx?ID=88616416-1b75-454d-a56e-e325129869db" title="DMCA.com Protection Status" class="dmca-badge" style="margin-top: 10px; margin-left: 5px;"> 
+						<img src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-09.png?ID=88616416-1b75-454d-a56e-e325129869db" alt="DMCA.com Protection Status" />
+					</a>
+					<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+				</center>
+			</section>
+		</footer>
+		<script src="./src/js/mode.js"></script>
+		<script src="./src/js/img.js"></script>
+	</body>
+</html>
