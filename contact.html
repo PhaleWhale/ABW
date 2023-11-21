@@ -65,8 +65,8 @@
 		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 		
 		<!-- Footer -->
-		<footer>
-			<section>
+		<footer style="position: absolute; bottom: 0; display: contents;">
+			<section class="linkscont" style="display: inline-flex; float: right;">
 				<div class="footerCols">
 					<div class="col">
 						<p><b>Get In Touch</b></p>
@@ -96,16 +96,23 @@
 					
 				</div>
 			</section>
-			<section class="">
-				<center class="copyright">
-					<p><i>Copyright <a href="./src/html/Hidden.html" style="text-decoration: none; color: white; font-size: 20px;">&#169</a> 2023 Aura Active</i></p>
-					<a href="//www.dmca.com/Protection/Status.aspx?ID=88616416-1b75-454d-a56e-e325129869db" title="DMCA.com Protection Status" class="dmca-badge" style="margin-top: 10px; margin-left: 5px;"> 
-						<img src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-09.png?ID=88616416-1b75-454d-a56e-e325129869db" alt="DMCA.com Protection Status" />
-					</a>
-					<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
-				</center>
+			<section class="newscont" style="display: inline;">
+				<div style="margin: 64px;">
+					<h2 style="margin-top: 0;">Join Our Newsletter</h2>
+					<div class="">
+						<center>
+						<form id="fcf-form-id" class="fcf-form-class" method="post" action="https://forms.un-static.com/forms/9c7e79f0094a5af194a4d2af754efb367370d98b">
+						<label for="Name" class="fcf-label"></label>
+						<div class="fcf-input-group details" style="float: left;">
+							<input type="email" id="Email" name="Email" class="fcf-form-control newsletter" placeholder="Your Email" required>
+						</div>
+						<div class="fcf-form-group" style="display: flex; padding: 4px 8px;">
+							<button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+						</div>
+						<center>
+					</div>
+				</div>
 			</section>
 		</footer>
-		<script src="./src/js/mode.js"></script>
 	</body>
 </html>
