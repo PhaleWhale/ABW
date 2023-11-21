@@ -121,18 +121,14 @@
 		
 	}
 	.newscont {
-		display: inline;
-		float: right;
-		position: absolute;
-		bottom: 0;
-		right: 0;
+		width: fit-content;
+		height: fit-content;
+		padding: 0px 25%;
+		margin-top: 64px;
 	}
 	.linkscont {
-		display: inline-flex;
-		float: left;
-		justify-content: flex-end;
-		bottom: 0;
-		position: absolute;
+		width: fit-content;
+		float: right;
 	}
 
 
