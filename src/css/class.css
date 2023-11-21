@@ -34,9 +34,8 @@
 }
 
 .landingImg {
-	width: 100%; 
 	object-fit: cover; 
-	height: 800px;
+	height: 512px;
 }
 
 @media screen and (max-width:900px) {
