@@ -120,7 +120,20 @@
 	.newsFields {
 		
 	}
-
+	.newscont {
+		display: inline;
+		float: right;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	.linkscont {
+		display: inline-flex;
+		float: left;
+		justify-content: flex-end;
+		bottom: 0;
+		position: absolute;
+	}
 
 
 /** Slider **/

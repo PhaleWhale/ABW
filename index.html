@@ -48,8 +48,8 @@
 		
 		<br /><br /><br />
 		<!-- Footer -->
-		<footer>
-			<section class="linkscont">
+		<footer style="position: absolute; bottom: 0; display: contents;">
+			<section class="linkscont" style="display: inline-flex; float: right;">
 				<div class="footerCols">
 					<div class="col">
 						<p><b>Get In Touch</b></p>
@@ -79,19 +79,21 @@
 					
 				</div>
 			</section>
-			<section class="newscont">
-				<h2 style="margin-top: 0;">Join Our Newsletter</h2>
-				<div class="">
-					<center>
-					<form id="fcf-form-id" class="fcf-form-class" method="post" action="https://forms.un-static.com/forms/9c7e79f0094a5af194a4d2af754efb367370d98b">
-					<label for="Name" class="fcf-label"></label>
-					<div class="fcf-input-group details" style="float: left;">
-						<input type="email" id="Email" name="Email" class="fcf-form-control newsletter" placeholder="Your Email" required>
+			<section class="newscont" style="display: inline;">
+				<div style="margin: 64px;">
+					<h2 style="margin-top: 0;">Join Our Newsletter</h2>
+					<div class="">
+						<center>
+						<form id="fcf-form-id" class="fcf-form-class" method="post" action="https://forms.un-static.com/forms/9c7e79f0094a5af194a4d2af754efb367370d98b">
+						<label for="Name" class="fcf-label"></label>
+						<div class="fcf-input-group details" style="float: left;">
+							<input type="email" id="Email" name="Email" class="fcf-form-control newsletter" placeholder="Your Email" required>
+						</div>
+						<div class="fcf-form-group" style="display: flex; padding: 4px 8px;">
+							<button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+						</div>
+						<center>
 					</div>
-					<div class="fcf-form-group">
-						<button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block newsbut">Send</button>
-					</div>
-					<center>
 				</div>
 			</section>
 		</footer>
